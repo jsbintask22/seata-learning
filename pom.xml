@@ -12,7 +12,21 @@
         <module>seata-springboot</module>
         <module>seata-springcloud</module>
         <module>seata-dubbo</module>
+        <module>common</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>cn.jsbintask</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.8</version>
+        </dependency>
+    </dependencies>
 
 
     <build>

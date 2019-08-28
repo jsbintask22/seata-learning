@@ -17,6 +17,7 @@
         <module>user-service</module>
         <module>order-service</module>
         <module>business-service</module>
+        <module>product-service</module>
     </modules>
 
     <properties>

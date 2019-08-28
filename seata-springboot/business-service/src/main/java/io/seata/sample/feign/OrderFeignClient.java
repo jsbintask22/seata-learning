@@ -5,8 +5,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- * Description：
- *
  * @author jsbintask@gmail.com
  * @date 2019-04-04
  */

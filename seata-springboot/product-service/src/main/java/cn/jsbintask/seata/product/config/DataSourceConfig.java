@@ -12,7 +12,7 @@ import javax.sql.DataSource;
 /**
  * 数据源配置
  *
- * @author HelloWoodes
+ * @author jsbintask@gmail.com
  */
 @Configuration
 public class DataSourceConfig {

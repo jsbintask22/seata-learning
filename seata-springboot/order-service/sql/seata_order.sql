@@ -10,6 +10,8 @@ CREATE TABLE `t_order`
     `product_code` VARCHAR(255) DEFAULT NULL,
     `count`          INT(11)      DEFAULT '0',
     `money`          INT(11)      DEFAULT '0',
+    `create_time` DATETIME DEFAULT NULL,
+    `update_time` DATETIME DEFAULT NULL,
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8;

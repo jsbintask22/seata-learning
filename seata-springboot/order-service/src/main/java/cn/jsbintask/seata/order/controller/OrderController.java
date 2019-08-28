@@ -4,6 +4,8 @@ import cn.jsbintask.seata.domain.Order;
 import cn.jsbintask.seata.order.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -22,6 +24,11 @@ public class OrderController {
     public Order create(String userId, String commodityCode, Integer count) {
 
         return orderService.create(userId, commodityCode, count);
+    }
+
+    @PostMapping("/update")
+    public Order update(@RequestBody Order order) {
+        return orderService.update(order);
     }
 
 }

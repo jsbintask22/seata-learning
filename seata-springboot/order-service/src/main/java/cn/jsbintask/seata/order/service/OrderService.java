@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
+import java.util.Date;
 
 /**
  * Description：
@@ -29,9 +30,13 @@ public class OrderService {
         order.setProductCode(commodityCode);
         order.setCount(count);
         order.setMoney(orderMoney);
-
+        order.setCreateTime(new Date());
+        order.setUpdateTime(new Date());
         orderDAO.saveAndFlush(order);
         return order;
     }
 
+    public Order update(Order order) {
+        return orderDAO.saveAndFlush(order);
+    }
 }

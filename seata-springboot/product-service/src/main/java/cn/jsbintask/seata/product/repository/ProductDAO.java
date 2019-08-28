@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 /**
  * Description：
  *
- * @author fangliangsheng
+ * @author jsbintask@gmail.com
  * @date 2019-04-04
  */
 public interface ProductDAO extends JpaRepository<Product, Integer> {
